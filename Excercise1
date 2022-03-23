@@ -1,0 +1,9 @@
+public class MyDate {
+    int day;
+    int month;
+    int year;
+
+    public void initDate() {
+        System.out.print(this.day+this.month + this.year);
+    }
+}
