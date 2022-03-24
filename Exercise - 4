@@ -1,0 +1,30 @@
+public class Date
+{  
+   int day;
+   String month;
+    int year;
+   Date(int day, String  month)
+   {
+       this.day=day;
+       this.month=month;
+   }
+   Date(int day, String  month, int  year)
+   {
+      this(day,month);
+        this. year= year;
+   }
+   void display()
+   {
+       
+       System.out.println(day+" "+month+" "+year);
+   }
+
+       public static void main(String[]args)
+       {
+           Date d=new Date(11,"june",2021);
+           d.display();
+           Date d2=new Date(25,"july",2022);
+           d2.display();
+}
+   }
+
