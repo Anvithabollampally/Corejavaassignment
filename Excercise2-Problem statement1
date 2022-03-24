@@ -1,0 +1,34 @@
+public class Date {
+    int day=10;
+String month="jan";
+    int year=1996;
+    public void initDate() {
+      System.out.print(this.day+this.month + this.year);
+    }
+public int getDay() {
+    return day;
+  }
+   public void setDay(int day) {
+       this.day = day;
+   }
+  public String getMonth() {
+    return month;
+  }
+   public void setMonth( String month) {
+       this.month = month;
+   }
+   public int getYear() {
+    return year;
+  }
+   public void setYear(int year) {
+       this.year = year;
+   }
+
+   public static void main(String args[]) {
+       Date d = new Date();
+       System.out.println("Day is: "+d.getDay());
+       System.out.println("Month is: "+d.getMonth());
+       System.out.println("Year is: "+d.getYear()); 
+      
+  }
+}
