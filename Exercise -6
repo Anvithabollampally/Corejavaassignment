@@ -1,0 +1,117 @@
+Employee.java
+
+public class Employee{
+
+   private int employeeId;
+   private String employeeName;
+   private double salary;
+   private double grossSalary;
+
+
+   public void setEmployeeId(int employeeId){
+       this.employeeId=employeeId;
+   }
+
+   public void setEmployeeName(String employeeName){
+       this.employeeName=employeeName;
+   }
+
+   public void setSalary(double salary){
+       this.salary=salary;
+   }
+
+   public void setNetSalary(double grossSalary){
+       this.grossSalary=grossSalary;
+   }
+
+
+   public int getEmployeeId(){
+       return employeeId;
+   }
+
+   public String getEmployeeName(){
+       return employeeName;
+   }
+
+   public double getSalary(){
+       return salary;
+   }
+
+   public double getGrossSalary(){
+       return grossSalary;
+   }
+
+   public void calculateNetSalary(double pfpercentage) {
+       double pfamount = salary * (pfpercentage / 100);
+       grossSalary = salary - pfamount;
+   }
+
+   @Override
+   public String toString() {
+       String output = new StringBuffer()
+               .append("Id: ").append(employeeId)
+               .append(System.lineSeparator()).append("Name: ").append(employeeName)
+               .append(System.lineSeparator()).append("Salary: ").append(salary)
+               .append(System.lineSeparator()).append("Gross Salary: ").append(grossSalary).toString();
+       return output;
+   }
+}
+
+
+
+
+
+
+   EmployeeSalaryCalculation.java:
+
+   private Scanner scanner;
+   public EmployeeSalaryCalculation() {
+       scanner = new Scanner(System.in);
+   }
+
+   public Employee getEmployeeDetails() {
+       Employee employee = new Employee();
+       System.out.println("Enter Id:");
+       employee.setEmployeeId(scanner.nextInt());
+       System.out.println("Enter Name:");
+       employee.setEmployeeName(scanner.next());
+       System.out.println("Enter salary:");
+       employee.setSalary(scanner.nextDouble());
+       return employee;
+   }
+
+   public double getPFPercentage(){
+       System.out.println("Enter PF percentage:");
+       return scanner.nextDouble();
+   }
+
+   public static void main(String[] args) {
+       EmployeeSalaryCalculation employeeSalaryCalculation = new EmployeeSalaryCalculation();
+       Employee employee = employeeSalaryCalculation.getEmployeeDetails();
+       employee.calculateNetSalary(employeeSalaryCalculation.getPFPercentage());
+       System.out.println(employee.toString());
+   }
+}
+
+Main.java:
+
+import package1.*;
+import Package2.*;
+
+class Main
+{
+   public static void main(String args[])
+   {
+    package1.Student  a=new package1.Student(23,'f',"sony","Mr.Raja","Mrs.Rani","Hyderabad");
+
+       a.test();
+       Package2.BatchStudent de= new  Package2.BatchStudent(64,95,03);
+       de.test1();
+
+
+
+   }
+
+}
+
+
