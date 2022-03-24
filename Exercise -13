@@ -1,0 +1,27 @@
+
+class Date implements Cloneable {  
+int day;  
+String month;  
+Date(int day, String month){  
+this.day = day;  
+this.month = month;  
+}  
+@Override  
+protected Object clone() throws CloneNotSupportedException {  
+ return super.clone();  
+   
+}  
+ 
+public static void main(String[] args) {  
+ 
+Date  s = new Date (19, "Oct0ber");  
+System.out.println(s.day + " " + s.month);  
+try {  
+Date  s1 = (Date )s.clone();  
+System.out.println(s1.day  + " " + s1.month);  
+}catch (Exception e) {  
+ 
+System.out.println(s.toString());  
+}  
+}  
+}  
