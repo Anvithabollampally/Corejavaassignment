@@ -1,0 +1,72 @@
+
+ Student.java
+
+package package1;
+
+
+   public class Student
+   {
+       int age;
+       String name,addr,fna,mna;
+       public Student(int e, char m, String a, String b, String c, String d)
+       {
+           age=e;
+           name=a;
+           addr=d;
+           fna=b;
+           mna=c;
+       }
+       public void test()
+       {
+           System.out.println("STUDENT INFORMATION");
+           System.out.println("Name of the student is: "+name);
+           System.out.println("Age="+age);
+           System.out.println("Address of the student is: "+addr);
+           System.out.println("Father's name: "+fna);
+           System.out.println("Mother'sname is: "+mna);
+       }
+   }
+
+
+BatchStudent.java:
+
+package Package2;
+
+public class BatchStudent
+{
+   int tot,avg,bnum;
+   public BatchStudent(int f,int g,int h)
+   {
+       tot=f;
+       avg=g;
+       bnum=h;
+   }
+   public void test1()
+   {
+       System.out.println("BATCH INFORMATION");
+       System.out.println("Batch number "+bnum);
+       System.out.println("Total number of students in a batch= "+tot);
+       System.out.println("Average Attendance of each student  ="+avg+"%");
+
+   }
+}
+
+Main.java
+
+class Main
+{
+    public static void main(String args[])
+    {
+     package1.Student  a=new package1.Student(23,'f',"sony","Mr.Raja","Mrs.Rani","Hyderabad");
+
+
+
+        a.test();
+        Package2.BatchStudent de= new  Package2.BatchStudent(64,95,03);
+        de.test1();
+
+
+
+    }
+
+}
