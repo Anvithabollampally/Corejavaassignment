@@ -1,1 +1,31 @@
+class Employee{
+int empId;
+String eName;
+double basicSal,medical,pt,netSal,grossSal;
+Employee(){
+
+}
+Employee(int empId, String eName,double basicSal, double medical, double pt, double netSal, double grossSal){
+this.empId=empId;
+this.eName=eName;
+this.basicSal=basicSal;
+this.medical=medical;
+this.pt=pt;
+this.netSal=netSal;
+this.grossSal=grossSal;
+}
+public void calculate() 
+{
+double hra=(50d/100d)*basicSal;
+double pf=(12d/100d)*basicSal;
+System.out.println(hra + " ");
+System.out.println(" " + pf);
+}
+public static void main(String[] args){
+Employee emp=new Employee(11, "anvitha", 35000d, 12d, 200d, 20000d, 40000d);
+emp.calculate(); 
+}
+
+}
+
 
