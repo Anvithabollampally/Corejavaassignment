@@ -3,7 +3,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.File;
-public class Karimnagar {
+public class FileDemo {
     public static void main(String[] args) throws IOException {
         try {
             BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\HONEY\\Downloads\\studentbatchstudent\\src\\Package2\\Honey"));
@@ -14,7 +14,7 @@ public class Karimnagar {
             System.out.println("Error! File not found!");
             e.printStackTrace();
         } finally {
-            System.out.println ("And here's the finally block!");
+            System.out.println ("It's a finally block");
         }
     }
 }
