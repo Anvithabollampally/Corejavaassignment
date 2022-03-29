@@ -1,0 +1,31 @@
+interface Printable
+{
+   public void print();
+}
+class Employee implements Printable
+{
+   public void  print()
+   {
+	System.out.println("This is a method1");
+   }
+  class Date implements Printable
+{
+   public void  print()
+   {
+	System.out.println("This is a method1");
+   }
+}
+   class Shape implements Printable
+{
+   public void  print()
+   {
+	System.out.println("This is a method1");
+   }
+}
+   public static void main(String arg[])
+   {
+	Printable obj = new Employee();
+	obj. print();
+   }
+}
+
