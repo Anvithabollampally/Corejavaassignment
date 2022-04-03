@@ -1,0 +1,27 @@
+class Employee{
+  int empName,empSal;
+   static int empId;
+   public void Employee()
+    {
+        this.empId=this.empId+1;
+       
+    }
+    public static void totalEmployees()
+    {
+        System.out.println("Total number of employees = " + Employee.empId);
+    }
+
+public static void main(String[]args)
+{
+    Employee e=new Employee();
+    e.Employee();
+    e.totalEmployees();
+    Employee e1=new Employee();
+    e1.Employee();
+    e1.totalEmployees();
+    Employee e3=new Employee();
+    e3.Employee();
+    e3.totalEmployees();
+   
+}
+}
