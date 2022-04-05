@@ -8,7 +8,6 @@ public class DivisionDemo  {
 
         if(firstNumber / secondNumber==0)// Conditional statement.
             throw new ArithmeticException("number1");
-        else System.out.println("give number2 value as 0");
+        else System.out.println("The result is  "+  firstNumber/secondNumber);
     }
 }
-
