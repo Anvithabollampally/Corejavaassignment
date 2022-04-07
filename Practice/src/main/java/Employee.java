@@ -36,6 +36,8 @@ class Employee {
         this.netSal = this.grossSal - (this.pt + this.pf);
          System.out.println(this.grossSal);
         System.out.println(this.netSal);
+        System.out.println(this.netSal);
+
 
     }
 
