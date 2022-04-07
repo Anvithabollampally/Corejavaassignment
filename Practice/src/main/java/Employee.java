@@ -31,10 +31,11 @@ class Employee {
         this.pt = pt;
         this.hra = (50 * basicSal) / 100;
         this.pf = (20 * basicSal) / 100;
+
         this.grossSal = this.basicSal + this.hra + this.medical;
         this.netSal = this.grossSal - (this.pt + this.pf);
-        // System.out.println(this.grossSal);
-        //System.out.println(this.netSal);
+         System.out.println(this.grossSal);
+        System.out.println(this.netSal);
 
     }
 
